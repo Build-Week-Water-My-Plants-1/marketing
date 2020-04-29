@@ -1,3 +1,43 @@
-*{
-    background-color: grey;
+
+.TopOfPage {
+    background-color: @bgColor;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    color: @mainColor;
+    font-size: 4rem;
+    font-family: @titleFont;
+    padding: 3%;
+}
+
+nav {
+    height: 3vh;
+    width: 35%;
+    margin: 2%;
+    display:flex;
+    justify-content: space-evenly;
+    a {
+        .centerNav();
+        .linkReset();
+        color: @thirdAccentColor;
+        font-size: 1rem;
+        font-family: @mainFont;
+        padding: 1.2%;
+        width:25%;
+        &:hover {
+            background-color: @mainColor;
+            border-radius: 10px;
+            color: white;
+        }//closes hover
+    }//closes a
+}//closes nav
+
+main {
+    .backgroundImg();
+    display:flex;
+    flex-direction: column;
+    .centerMain();
 }
