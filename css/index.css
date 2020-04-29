@@ -94,6 +94,7 @@ video {
 /* Border on Main */
 /* Centering for Main */
 /* Paragraph */
+/* Image Rows */
 nav {
   height: 3vh;
   width: 35%;
@@ -109,7 +110,8 @@ nav a {
   text-decoration: none;
   letter-spacing: 0.1rem;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
   font-family: 'Spartan', sans-serif;
   padding: 1.2%;
   width: 25%;
@@ -132,6 +134,7 @@ header {
   color: #757c57;
   font-size: 5rem;
   font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5rem;
   padding: 3%;
 }
 main {
@@ -142,7 +145,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 70vh;
+  height: 69vh;
 }
 main h2 {
   font-family: 'Anton', sans-serif;
@@ -165,23 +168,30 @@ main p {
   width: 70%;
   background: rgba(158, 150, 135, 0.25);
 }
-.welcome {
-  height: 20vh;
-  margin: 0% 1% 1%;
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45vh;
 }
-.welcome h2 {
+.row .welcome {
+  height: 20vh;
+  margin: 0% 1% 1% 2%;
+}
+.row .welcome h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
-  width: 35%;
+  width: 50%;
   padding: 2%;
   color: #757c57;
 }
-.welcome p {
+.row .welcome p {
   padding: 1% 2%;
   font-family: 'Spartan', sans-serif;
   font-size: 1.5rem;
+  line-height: 3rem;
 }
-.welcome .buttonParent {
+.row .welcome .buttonParent {
   display: flex;
   justify-content: center;
   border: 1px solid black;
@@ -189,17 +199,21 @@ main p {
   padding: 1%;
   width: 15%;
 }
-.welcome .buttonParent a {
+.row .welcome .buttonParent a {
   text-decoration: none;
   letter-spacing: 0.1rem;
   color: black;
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
 }
-.welcome .buttonParent:hover {
-  color: white;
+.row .welcome .buttonParent:hover {
   background-color: #B1AD74;
   border: none;
+}
+.row img {
+  justify-content: flex-end;
+  width: 35%;
+  height: 45vh;
 }
 footer {
   background-color: #757c57;
@@ -209,4 +223,66 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.5rem;
+  color: #fff9ef;
+}
+.appSummary {
+  background-color: #B1AD74;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 2% 5%;
+}
+.appSummary h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: #fff9ef;
+}
+.appSummary p {
+  font-family: 'Spartan', sans-serif;
+  color: #fff9ef;
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+.succulents img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+.planOne,
+.planTwo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3% 0% 0%;
+  padding: 2%;
+}
+.planOne h3,
+.planTwo h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+.planOne p,
+.planTwo p {
+  font-family: 'Spartan', sans-serif;
+  font-size: 2rem;
+  margin: 1%;
+}
+.buttonParentTwo {
+  background-color: #757c57;
+  width: 20%;
+  padding: 2%;
+  text-align: center;
+  margin: 0% 38%;
+}
+.buttonParentTwo a {
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  color: #fff9ef;
+  font-size: 2rem;
+  font-family: 'Spartan', sans-serif;
 }
