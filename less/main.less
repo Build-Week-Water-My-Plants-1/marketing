@@ -17,31 +17,76 @@ header {
     padding: 3%;
 }
 
+
 main {
     .backgroundImg();
     display:flex;
-    flex-direction: column;
     .centerMain();
+    flex-direction: column;
+    height: 70vh;
     h2 {
         font-family: @subtitleFont;
-        letter-spacing: 1.2rem;
-        font-size: 5.5rem;
-        color: white;
+        letter-spacing: 1.5rem;
+        font-size: 6rem;
+        color: black;
         text-align: center;
         width:76%;
-        background: rgba(49, 49, 49, 0.65);
+        background: rgba(158, 150, 135, 0.25);
     }//closes h2
     p {
         width:75%;
         text-align: center;
         font-family: @titleFont;
-        color:white;
+        color:black;
         letter-spacing: .2rem;
         line-height: 3rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding:0% 3% 1%;
         width:70%;
-        background: rgba(49, 49, 49, 0.65);
+        background: rgba(158, 150, 135, 0.25);
     }//closes p
 }//closes main
 
+.welcome {
+    height: 20vh;
+    margin: 0% 1% 1%;
+    h2 {
+        font-family: @titleFont;
+        font-size: 3rem;
+        width: 35%;
+        padding: 2%;
+        color: @mainColor;
+    }//closes h2
+    p {
+        padding: 1% 2%;
+        font-family: @mainFont;
+        font-size: 1.5rem;
+    }
+    .buttonParent{
+        display:flex;
+        justify-content: center;
+        border:1px solid black;
+        margin: 2% 40%;
+        padding:1%;
+        width:15%;
+        a{
+            .linkReset();
+            color:black;
+            font-family: @titleFont;
+            font-size: 1.2rem; 
+        }
+        &:hover {
+            color:white;
+            background-color: @accentColor;
+            border:none;
+        }
+    }
+}//closes .welcome
+
+
+footer {
+    background-color: @mainColor;
+    height:9vh;
+    .centerNav();
+    font-size: 1.5rem;
+}
