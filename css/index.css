@@ -177,6 +177,7 @@ main {
   background-image: url('../photos/main.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
