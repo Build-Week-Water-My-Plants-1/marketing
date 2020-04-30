@@ -171,9 +171,30 @@ main {
 footer {
     background-color: @mainColor;
     height:9vh;
-    .centerNav();
+    display:flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
+    letter-spacing: .8rem;
     color:@secondAccentColor;
+    .fa {
+        padding: 20px;
+        font-size: 2rem;
+        width: .5%;
+        text-decoration: none;
+        @media @mobile {
+            font-size: 1rem;
+        }
+      }
+      .fa-facebook {
+        color: @secondAccentColor;
+      }
+      .fa-twitter {
+        color: @secondAccentColor;
+      }
+      .fa-instagram {
+          color:@secondAccentColor
+      }
     @media @tablet{
         height: 4vh;
         font-size: 1rem;
@@ -241,6 +262,7 @@ footer {
 .succulents{
     img{
         .imgRow();
+        background-attachment: fixed;
         @media @mobile {
             height:15vh;
         }//closes media mobile
