@@ -1,5 +1,6 @@
 html{
     font-size:62.5%;
+    max-width:1440px;
 }
 
 
@@ -16,6 +17,9 @@ header {
     font-family: @titleFont;
     letter-spacing: .5rem;
     padding: 3%;
+    @media @tablet {
+        font-size:2rem;
+    }
 }
 
 
@@ -24,7 +28,10 @@ main {
     display:flex;
     .centerMain();
     flex-direction: column;
-    height: 69vh;
+    height: 49vh;
+    @media @tablet {
+        height: 30vh;
+    }//closes media tablet
     h2 {
         font-family: @subtitleFont;
         letter-spacing: 1.5rem;
@@ -33,6 +40,9 @@ main {
         text-align: center;
         width:76%;
         background: rgba(158, 150, 135, 0.25);
+        @media @tablet{
+            font-size:2.5rem;
+        }//closes media tablet
     }//closes h2
     p {
         width:75%;
@@ -41,10 +51,14 @@ main {
         color:black;
         letter-spacing: .2rem;
         line-height: 3rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding:0% 3% 1%;
         width:70%;
         background: rgba(158, 150, 135, 0.25);
+        @media @tablet{
+            font-size:1rem;
+            line-height: 2rem;
+        }//closes media tablet
     }//closes p
 }//closes main
 
@@ -53,6 +67,9 @@ main {
     justify-content: space-between;
     align-items: center;
     height:45vh;
+    @media @tablet{
+        height:25vh;
+    }//closes media tablet
     .welcome {
         height: 20vh;
         margin: 0% 1% 1% 2%;
@@ -62,12 +79,18 @@ main {
             width: 50%;
             padding: 2%;
             color: @mainColor;
+            @media @tablet{
+                font-size:1.7rem;
+            }//closes media tablet
         }//closes h2
         p {
             padding: 1% 2%;
             font-family: @mainFont;
             font-size: 1.5rem;
             line-height: 3rem;
+            @media @tablet{
+                font-size:1.1rem;
+            }//closes media tablet
         }
         .buttonParent{
             display:flex;
@@ -76,11 +99,17 @@ main {
             margin: 2% 40%;
             padding:1%;
             width:15%;
+            @media @tablet{
+                width:20%;
+            }//closes media tablet
             a{
                 .linkReset();
                 color:black;
                 font-family: @titleFont;
                 font-size: 1.2rem; 
+                @media @tablet{
+                    font-size:.5rem;
+                }//closes media tablet
             }
             &:hover {
                 background-color: @accentColor;
@@ -93,6 +122,9 @@ main {
         width:35%;
         height:45vh;
         object-fit: cover;
+        @media @tablet{
+            height: 25vh;
+        }//closes media tablet
     }
 }//closes row
 
@@ -102,6 +134,10 @@ footer {
     .centerNav();
     font-size: 1.5rem;
     color:@secondAccentColor;
+    @media @tablet{
+        height: 4vh;
+        font-size: 1rem;
+    }//closes media tablet
 }
 
 
@@ -114,7 +150,7 @@ footer {
     flex-direction: column;
     padding:2% 5%;
     h2 {
-        font-family: @subtitleFont;
+        font-family: @mainFont;
         font-size: 3rem;
         letter-spacing: 1rem;
         text-transform: uppercase;
@@ -123,14 +159,14 @@ footer {
     p {
         font-family: @mainFont;
         color: @secondAccentColor;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         line-height: 4rem;
         
     }
     h4 {
         font-family:@mainFont;
         color:white;
-        font-size: 2rem;
+        font-size: 1.8rem;
         letter-spacing: .5rem;
     }
 }//closes .appSummary
