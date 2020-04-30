@@ -1,3 +1,12 @@
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+    }
+
 html{
     font-size:62.5%;
     // max-width:1440px;
@@ -41,6 +50,7 @@ main {
         text-align: center;
         width:76%;
         background: rgba(158, 150, 135, 0.25);
+        .animate();
         @media @tablet{
             font-size:2.5rem;
         }//closes media tablet
@@ -59,6 +69,7 @@ main {
         padding:0% 3% 1%;
         width:70%;
         background: rgba(158, 150, 135, 0.25);
+        .animate();
         @media @tablet{
             font-size:1rem;
             line-height: 2rem;
@@ -197,7 +208,7 @@ footer {
     p {
         font-family: @mainFont;
         color: @secondAccentColor;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         letter-spacing: .2rem;
         line-height: 4rem;
         @media @tablet {
@@ -213,7 +224,7 @@ footer {
     h4 {
         font-family:@mainFont;
         color:white;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         letter-spacing: .5rem;
         text-align: center;
         @media @tablet{
@@ -279,3 +290,53 @@ footer {
         }//closes media mobile
     }
 }
+
+.intro {
+    background-color: @secondAccentColor;
+    font-size: 3rem;
+    padding: 3% 3% 1% 4%; 
+    font-family: @titleFont;
+    letter-spacing: .6rem;
+    color: @mainColor;
+}
+
+.meetTheTeam {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 2%;
+    background-color: @secondAccentColor;
+    .person {
+        padding:1%;
+        text-align: center;
+        width:25%;
+        margin:2%;
+        @media @tablet {
+            width:35%;
+        }// closes tablet
+        img {
+            width:75%;
+            border-radius: 200px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-family: @mainFont;
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+            margin:3% 0%;
+            @media @mobile {
+                font-size: 1rem;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            font-family: @mainFont;
+            line-height: 2.5rem;
+            @media @mobile {
+                font-size:1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }//closes .person
+}//closes .meetTheTeam

@@ -96,6 +96,7 @@ video {
 /* Paragraph */
 /* Image Rows */
 /* About Buttons */
+/* Animation */
 nav {
   height: 3vh;
   width: 35%;
@@ -103,7 +104,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   nav {
     width: 50%;
   }
@@ -133,7 +134,7 @@ nav a:hover {
   border-radius: 10px;
   color: white;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   nav a {
     font-size: 0.5rem;
   }
@@ -141,6 +142,14 @@ nav a:hover {
 @media (max-width:500px) {
   nav a {
     font-size: 0.5rem;
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 html {
@@ -159,7 +168,7 @@ header {
   letter-spacing: 0.5rem;
   padding: 3%;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   header {
     font-size: 2rem;
   }
@@ -174,7 +183,7 @@ main {
   flex-direction: column;
   height: 49vh;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   main {
     height: 25vh;
   }
@@ -192,8 +201,11 @@ main h2 {
   text-align: center;
   width: 76%;
   background: rgba(158, 150, 135, 0.25);
+  animation: fadeInAnimation ease 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   main h2 {
     font-size: 2.5rem;
   }
@@ -214,8 +226,11 @@ main p {
   padding: 0% 3% 1%;
   width: 70%;
   background: rgba(158, 150, 135, 0.25);
+  animation: fadeInAnimation ease 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   main p {
     font-size: 1rem;
     line-height: 2rem;
@@ -233,7 +248,7 @@ main p {
   align-items: center;
   height: 45vh;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .row {
     height: 25vh;
   }
@@ -259,7 +274,7 @@ main p {
   padding: 2%;
   color: #757c57;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .row .welcome h2 {
     font-size: 1.7rem;
   }
@@ -275,7 +290,7 @@ main p {
   font-size: 1.5rem;
   line-height: 3rem;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .row .welcome p {
     font-size: 1.1rem;
   }
@@ -295,7 +310,7 @@ main p {
   padding: 1%;
   width: 15%;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .row .welcome .buttonParent {
     width: 20%;
   }
@@ -313,7 +328,7 @@ main p {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .row .welcome .buttonParent a {
     font-size: 0.5rem;
   }
@@ -328,7 +343,7 @@ main p {
   height: 45vh;
   object-fit: cover;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .row img {
     height: 25vh;
   }
@@ -348,7 +363,7 @@ footer {
   font-size: 1.5rem;
   color: #fff9ef;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   footer {
     height: 4vh;
     font-size: 1rem;
@@ -390,11 +405,11 @@ footer {
 .appSummary p {
   font-family: 'Spartan', sans-serif;
   color: #fff9ef;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 0.2rem;
   line-height: 4rem;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .appSummary p {
     font-size: 1.3rem;
     line-height: 3rem;
@@ -409,11 +424,11 @@ footer {
 .appSummary h4 {
   font-family: 'Spartan', sans-serif;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   letter-spacing: 0.5rem;
   text-align: center;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .appSummary h4 {
     font-size: 1.1rem;
     line-height: 2rem;
@@ -467,7 +482,7 @@ footer {
   font-size: 1.6rem;
   margin: 5% 0%;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .planRow .planOne p,
   .planRow .planTwo p {
     font-size: 1.3rem;
@@ -481,7 +496,7 @@ footer {
   padding: 1.5%;
   text-align: center;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .planRow .buttonParentTwo,
   .planRow .buttonParentThree {
     padding: 2%;
@@ -502,7 +517,7 @@ footer {
   font-size: 1.5rem;
   font-family: 'Spartan', sans-serif;
 }
-@media (max-width:1022px) {
+@media (max-width:1023px) {
   .planRow .buttonParentTwo a,
   .planRow .buttonParentThree a {
     font-size: 1.2rem;
@@ -526,5 +541,59 @@ footer {
 @media (max-width:500px) {
   .moreSucculents img {
     height: 15vh;
+  }
+}
+.intro {
+  background-color: #fff9ef;
+  font-size: 3rem;
+  padding: 3% 3% 1% 4%;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.6rem;
+  color: #757c57;
+}
+.meetTheTeam {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 2%;
+  background-color: #fff9ef;
+}
+.meetTheTeam .person {
+  padding: 1%;
+  text-align: center;
+  width: 25%;
+  margin: 2%;
+}
+@media (max-width:1023px) {
+  .meetTheTeam .person {
+    width: 35%;
+  }
+}
+.meetTheTeam .person img {
+  width: 75%;
+  border-radius: 200px;
+}
+.meetTheTeam .person h3 {
+  font-size: 1.5rem;
+  font-family: 'Spartan', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 3% 0%;
+}
+@media (max-width:500px) {
+  .meetTheTeam .person h3 {
+    font-size: 1rem;
+  }
+}
+.meetTheTeam .person p {
+  font-size: 1.5rem;
+  font-family: 'Spartan', sans-serif;
+  line-height: 2.5rem;
+}
+@media (max-width:500px) {
+  .meetTheTeam .person p {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
