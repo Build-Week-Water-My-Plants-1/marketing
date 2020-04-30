@@ -95,6 +95,7 @@ video {
 /* Centering for Main */
 /* Paragraph */
 /* Image Rows */
+/* About Buttons */
 nav {
   height: 3vh;
   width: 35%;
@@ -214,6 +215,7 @@ main p {
   justify-content: flex-end;
   width: 35%;
   height: 45vh;
+  object-fit: cover;
 }
 footer {
   background-color: #757c57;
@@ -248,9 +250,15 @@ footer {
   font-size: 1.5rem;
   line-height: 4rem;
 }
+.appSummary h4 {
+  font-family: 'Spartan', sans-serif;
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
 .succulents img {
   width: 100%;
-  height: 30vh;
+  height: 31vh;
   object-fit: cover;
 }
 .planOne,
@@ -258,8 +266,8 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 3% 0% 0%;
-  padding: 2%;
+  margin: 1% 0% 0%;
+  padding: 1%;
 }
 .planOne h3,
 .planTwo h3 {
@@ -270,19 +278,26 @@ footer {
 .planTwo p {
   font-family: 'Spartan', sans-serif;
   font-size: 2rem;
-  margin: 1%;
+  margin: 2% 0% 0%;
 }
-.buttonParentTwo {
+.buttonParentTwo,
+.buttonParentThree {
   background-color: #757c57;
   width: 20%;
   padding: 2%;
   text-align: center;
-  margin: 0% 38%;
+  margin: 2% 38%;
 }
-.buttonParentTwo a {
+.buttonParentTwo a,
+.buttonParentThree a {
   text-decoration: none;
   letter-spacing: 0.1rem;
   color: #fff9ef;
   font-size: 2rem;
   font-family: 'Spartan', sans-serif;
+}
+.moreSucculents img {
+  width: 100%;
+  height: 31vh;
+  object-fit: cover;
 }

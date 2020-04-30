@@ -92,6 +92,7 @@ main {
         justify-content: flex-end;
         width:35%;
         height:45vh;
+        object-fit: cover;
     }
 }//closes row
 
@@ -126,6 +127,12 @@ footer {
         line-height: 4rem;
         
     }
+    h4 {
+        font-family:@mainFont;
+        color:white;
+        font-size: 2rem;
+        letter-spacing: .5rem;
+    }
 }//closes .appSummary
 
 .succulents{
@@ -138,8 +145,8 @@ footer {
     display:flex;
     flex-direction: column;
     text-align: center;
-    margin: 3% 0% 0%;
-    padding:2%;
+    margin: 1% 0% 0%;
+    padding:1%;
     h3 {
         font-family: @titleFont;
         font-size:3rem;
@@ -147,20 +154,16 @@ footer {
     p {
         font-family: @mainFont;
         font-size: 2rem;
-        margin:1%;
+        margin:2% 0% 0%;
     }
 }
 
-.buttonParentTwo {
-    background-color: @mainColor;
-    width:20%;
-    padding:2%;
-    text-align: center;
-    margin: 0% 38%;
-    a{
-        .linkReset();
-        color:@secondAccentColor;
-        font-size: 2rem;
-        font-family: @mainFont;
+.buttonParentTwo,.buttonParentThree {
+    .aboutButtons();
+}
+
+.moreSucculents {
+    img {
+        .imgRow();
     }
 }
