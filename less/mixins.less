@@ -14,7 +14,7 @@
 
 /* Background Image */
 .backgroundImg(){
-    background-image: url('./photos/nathan-fertig-U8zsjmKA840-unsplash.jpg');
+    background-image: url('../photos/nathan-fertig-U8zsjmKA840-unsplash (1).jpg');
     background-repeat: no-repeat;
     background-size:100%;
 }
@@ -47,15 +47,25 @@
 /* About Buttons */
 .aboutButtons(){
     background-color: @mainColor;
-    width:20%;
-    padding:2%;
+    border-radius: 10px;
+    width:30%;
+    padding:1.5%;
     text-align: center;
-    margin: 2% 38%;
+    @media @tablet {
+        padding:2%;
+        width:40%;
+    }
+    @media @mobile {
+        width: 50%;
+    }//closes media mobile
     a{
         .linkReset();
         color:@secondAccentColor;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: @mainFont;
+        @media @tablet {
+            font-size: 1.2rem;
+        }
         @media @mobile {
             font-size: 1rem;
         }//closes media mobile

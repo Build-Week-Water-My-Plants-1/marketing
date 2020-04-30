@@ -145,7 +145,6 @@ nav a:hover {
 }
 html {
   font-size: 62.5%;
-  max-width: 1440px;
 }
 .TopOfPage {
   background-color: #fff9ef;
@@ -166,7 +165,7 @@ header {
   }
 }
 main {
-  background-image: url('../photos/nathan-fertig-U8zsjmKA840-unsplash.jpg');
+  background-image: url('../photos/nathan-fertig-U8zsjmKA840-unsplash (1).jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
@@ -391,7 +390,8 @@ footer {
 .appSummary p {
   font-family: 'Spartan', sans-serif;
   color: #fff9ef;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
   line-height: 4rem;
 }
 @media (max-width:500px) {
@@ -403,8 +403,13 @@ footer {
 .appSummary h4 {
   font-family: 'Spartan', sans-serif;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   letter-spacing: 0.5rem;
+}
+@media (max-width:1022px) {
+  .appSummary h4 {
+    font-size: 1.1rem;
+  }
 }
 @media (max-width:500px) {
   .appSummary h4 {
@@ -422,61 +427,85 @@ footer {
     height: 15vh;
   }
 }
-.planOne,
-.planTwo {
+.planRow {
+  display: flex;
+  justify-content: center;
+}
+.planRow .planOne,
+.planRow .planTwo {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin: 1% 0% 0%;
+  align-items: center;
+  margin: 1%;
   padding: 1%;
 }
-.planOne h3,
-.planTwo h3 {
+.planRow .planOne h3,
+.planRow .planTwo h3 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
 }
 @media (max-width:500px) {
-  .planOne h3,
-  .planTwo h3 {
+  .planRow .planOne h3,
+  .planRow .planTwo h3 {
     font-size: 2rem;
   }
 }
-.planOne p,
-.planTwo p {
+.planRow .planOne p,
+.planRow .planTwo p {
   font-family: 'Spartan', sans-serif;
-  font-size: 2rem;
-  margin: 2% 0% 0%;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 5% 0%;
 }
-@media (max-width:500px) {
-  .planOne p,
-  .planTwo p {
+@media (max-width:1022px) {
+  .planRow .planOne p,
+  .planRow .planTwo p {
     font-size: 1.3rem;
   }
 }
-.buttonParentTwo,
-.buttonParentThree {
+.planRow .buttonParentTwo,
+.planRow .buttonParentThree {
   background-color: #757c57;
-  width: 20%;
-  padding: 2%;
+  border-radius: 10px;
+  width: 30%;
+  padding: 1.5%;
   text-align: center;
-  margin: 2% 38%;
 }
-.buttonParentTwo a,
-.buttonParentThree a {
+@media (max-width:1022px) {
+  .planRow .buttonParentTwo,
+  .planRow .buttonParentThree {
+    padding: 2%;
+    width: 40%;
+  }
+}
+@media (max-width:500px) {
+  .planRow .buttonParentTwo,
+  .planRow .buttonParentThree {
+    width: 50%;
+  }
+}
+.planRow .buttonParentTwo a,
+.planRow .buttonParentThree a {
   text-decoration: none;
   letter-spacing: 0.1rem;
   color: #fff9ef;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Spartan', sans-serif;
 }
+@media (max-width:1022px) {
+  .planRow .buttonParentTwo a,
+  .planRow .buttonParentThree a {
+    font-size: 1.2rem;
+  }
+}
 @media (max-width:500px) {
-  .buttonParentTwo a,
-  .buttonParentThree a {
+  .planRow .buttonParentTwo a,
+  .planRow .buttonParentThree a {
     font-size: 1rem;
   }
 }
-.buttonParentTwo:hover,
-.buttonParentThree:hover {
+.planRow .buttonParentTwo:hover,
+.planRow .buttonParentThree:hover {
   background-color: #B1AD74;
 }
 .moreSucculents img {
