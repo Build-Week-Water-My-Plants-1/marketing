@@ -394,6 +394,12 @@ footer {
   letter-spacing: 0.2rem;
   line-height: 4rem;
 }
+@media (max-width:1022px) {
+  .appSummary p {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+}
 @media (max-width:500px) {
   .appSummary p {
     font-size: 1rem;
@@ -405,16 +411,18 @@ footer {
   color: white;
   font-size: 1.4rem;
   letter-spacing: 0.5rem;
+  text-align: center;
 }
 @media (max-width:1022px) {
   .appSummary h4 {
     font-size: 1.1rem;
+    line-height: 2rem;
   }
 }
 @media (max-width:500px) {
   .appSummary h4 {
     font-size: 1rem;
-    letter-spacing: normal;
+    letter-spacing: 0.2rem;
   }
 }
 .succulents img {
@@ -430,6 +438,8 @@ footer {
 .planRow {
   display: flex;
   justify-content: center;
+  justify-content: space-evenly;
+  padding: 3%;
 }
 .planRow .planOne,
 .planRow .planTwo {

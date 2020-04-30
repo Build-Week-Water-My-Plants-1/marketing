@@ -200,6 +200,10 @@ footer {
         font-size: 1.5rem;
         letter-spacing: .2rem;
         line-height: 4rem;
+        @media @tablet {
+            font-size: 1.3rem;
+            line-height: 3rem;
+        }
         @media @mobile {
             font-size: 1rem;
             line-height: 2rem;
@@ -211,12 +215,14 @@ footer {
         color:white;
         font-size: 1.4rem;
         letter-spacing: .5rem;
+        text-align: center;
         @media @tablet{
             font-size: 1.1rem;
+            line-height: 2rem;
         }//closes media tablet
         @media @mobile {
             font-size: 1rem;
-            letter-spacing: normal;
+            letter-spacing: .2rem;
         }//closes media mobile
     }
 }//closes .appSummary
@@ -233,7 +239,8 @@ footer {
 .planRow{
     display:flex;
     justify-content: center;
-
+    justify-content: space-evenly;
+    padding: 3%;
     .planOne,.planTwo {
         display:flex;
         flex-direction: column;
