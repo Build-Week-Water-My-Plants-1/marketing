@@ -3,7 +3,6 @@ html{
     max-width:1440px;
 }
 
-
 .TopOfPage {
     background-color: @secondAccentColor;
     display:flex;
@@ -22,7 +21,6 @@ header {
     }
 }
 
-
 main {
     .backgroundImg();
     display:flex;
@@ -30,8 +28,11 @@ main {
     flex-direction: column;
     height: 49vh;
     @media @tablet {
-        height: 30vh;
+        height: 25vh;
     }//closes media tablet
+    @media @mobile {
+        height: 20vh;
+    }//closes media mobile  
     h2 {
         font-family: @subtitleFont;
         letter-spacing: 1.5rem;
@@ -43,6 +44,9 @@ main {
         @media @tablet{
             font-size:2.5rem;
         }//closes media tablet
+        @media @mobile {
+            font-size:1.5rem;
+        }//closes media mobile
     }//closes h2
     p {
         width:75%;
@@ -59,6 +63,10 @@ main {
             font-size:1rem;
             line-height: 2rem;
         }//closes media tablet
+        @media @mobile {
+            font-size:1rem;
+            line-height: 1.5rem;
+        }//closes media mobile
     }//closes p
 }//closes main
 
@@ -70,9 +78,15 @@ main {
     @media @tablet{
         height:25vh;
     }//closes media tablet
+    @media @mobile {
+        height: 15vh;
+    }//closes media mobile
     .welcome {
         height: 20vh;
         margin: 0% 1% 1% 2%;
+        @media @mobile {
+            height: 12vh;
+        }//closes media mobile
         h2 {
             font-family: @titleFont;
             font-size: 3rem;
@@ -82,6 +96,9 @@ main {
             @media @tablet{
                 font-size:1.7rem;
             }//closes media tablet
+            @media @mobile {
+                font-size:1.2rem;
+            }//closes media mobile
         }//closes h2
         p {
             padding: 1% 2%;
@@ -91,6 +108,11 @@ main {
             @media @tablet{
                 font-size:1.1rem;
             }//closes media tablet
+            @media @mobile {
+                font-size:1rem;
+                line-height: 1.5rem;
+                margin: 0% 0% 4%;
+            }//closes media mobile
         }
         .buttonParent{
             display:flex;
@@ -102,6 +124,10 @@ main {
             @media @tablet{
                 width:20%;
             }//closes media tablet
+            @media @mobile {
+                width:30%;
+                margin:1% 33%;
+            }//closes media mobile
             a{
                 .linkReset();
                 color:black;
@@ -125,6 +151,9 @@ main {
         @media @tablet{
             height: 25vh;
         }//closes media tablet
+        @media @mobile {
+            height:15vh;
+        }//closes media mobile
     }
 }//closes row
 
@@ -138,8 +167,11 @@ footer {
         height: 4vh;
         font-size: 1rem;
     }//closes media tablet
+    @media @mobile {
+        height: 2vh;
+        font-size:.8rem;
+    }//closes media mobile
 }
-
 
 //////////////////////////// ABOUT PAGE ////////////////////////////
 
@@ -149,18 +181,28 @@ footer {
     .centerNav();
     flex-direction: column;
     padding:2% 5%;
+    @media @mobile {
+        height:20vh;
+    }//closes media mobile
     h2 {
         font-family: @mainFont;
         font-size: 3rem;
         letter-spacing: 1rem;
         text-transform: uppercase;
         color:@secondAccentColor;
+        @media @mobile {
+            font-size: 1.3rem;
+        }//closes media mobile
     }
     p {
         font-family: @mainFont;
         color: @secondAccentColor;
         font-size: 1.6rem;
         line-height: 4rem;
+        @media @mobile {
+            font-size: 1rem;
+            line-height: 2rem;
+        }//closes media mobile
         
     }
     h4 {
@@ -168,12 +210,19 @@ footer {
         color:white;
         font-size: 1.8rem;
         letter-spacing: .5rem;
+        @media @mobile {
+            font-size: 1rem;
+            letter-spacing: normal;
+        }//closes media mobile
     }
 }//closes .appSummary
 
 .succulents{
     img{
         .imgRow();
+        @media @mobile {
+            height:15vh;
+        }//closes media mobile
     }
 }
 
@@ -186,11 +235,17 @@ footer {
     h3 {
         font-family: @titleFont;
         font-size:3rem;
+        @media @mobile {
+            font-size: 2rem;
+        }//closes media mobile
     }
     p {
         font-family: @mainFont;
         font-size: 2rem;
         margin:2% 0% 0%;
+        @media @mobile {
+            font-size: 1.3rem;
+        }//closes media mobile  
     }
 }
 
@@ -201,5 +256,8 @@ footer {
 .moreSucculents {
     img {
         .imgRow();
+        @media @mobile {
+            height:15vh;
+        }//closes media mobile
     }
 }

@@ -4,6 +4,13 @@ nav {
     margin: 2%;
     display:flex;
     justify-content: space-evenly;
+    @media @tablet {
+        width:50%;
+    }//closes media mobile
+    @media @mobile {
+        width: 60%;
+        height:2vh;
+    }//closes media mobile 
     a {
         .centerNav();
         .linkReset();
@@ -19,7 +26,10 @@ nav {
             color: white;
         }//closes hover
         @media @tablet {
-            font-size:1rem;
-        }
+            font-size:.5rem;
+        }//closes media tablet
+        @media @mobile {
+            font-size: .5rem;
+        }//closes media mobile
     }//closes a
 }//closes nav
